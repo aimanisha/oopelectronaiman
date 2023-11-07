@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CRUD App</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="photon.min.css" />
+
+    <style>
+        /* Style the container */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+            background-image: url('bgflower.jpg');
+            background-size: cover; /* Adjust to 'contain' or other values as needed */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Optional: Fixed background */
+            }
+
+        .form-group {
+            margin: 10px;
+            }
+
+
+        .form-group label {
+            font-weight: bold;
+            }
+
+
+        .form-control {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: none;
+            font-size: 16px;
+            }
+
+
+        .btn {
+            background-color: #4d89c8;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px;
+            border-radius: 3px;
+            }
+
+
+        .btn:hover {
+            background-color: #3b7ec6;
+            }
+
+
+        #btnDelete {
+            background-color: #c1404d;
+            }
+
+        #btnDelete:hover {
+            background-color: #c82333;
+            }
+
+        /* Style the link as a button */
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(151, 81, 178);
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            }
+
+        /* Change button color on hover */
+        a:hover {
+            background-color: rgb(110, 0, 179);
+            }   
+
+    </style>  
+
+  </head>
+  <body>
+    <div class="mainWrapper">
+    
+      <h1>WORD OF THE DAY (˵ •̀ ᴗ - ˵ ) ✧</h1>
+
+      <form>
+        <div class="form-group">
+          <label>File name</label>
+          <input id="fileName" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Content</label>
+          <textarea id="fileContents" class="form-control" rows="5"></textarea>
+
+        </div>
+      </form>
+      <button id="btnCreate" class="btn btn-default">Create</button>
+      <button id="btnRead" class="btn btn-default">Read</button>
+      <button id="btnDelete" class="btn btn-default">Delete</button>
+      <a href="hp.html" class="button-link">Back to homepage</a>
+
+
+    
+    </div>
+
+    <script src="main.js">
+      
+      
+    </script>
+  </body>
+</html>
+

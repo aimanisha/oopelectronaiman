@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary</title>
+    <style>
+      /* Style the container */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f2f2f2;
+    background-image: url('bgflower.jpg');
+    background-size: cover; /* Adjust to 'contain' or other values as needed */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: Fixed background */
+}
+
+/* Style the search input and button */
+#searchWord {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #84cbec;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the dropdown list */
+#wordList {
+    padding: 10px;
+    border: 1px solid #c37f7f;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* Style the result container */
+#definition {
+    margin-top: 20px;
+    padding: 50px;
+    background-color: #ecbaba;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Style the audio controls */
+audio {
+    margin-top: 10px;
+}
+
+a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: rgb(151, 81, 178);
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            }
+
+        /* Change button color on hover */
+        a:hover {
+            background-color: rgb(110, 0, 179);
+            }   
+
+
+    </style>
+</head>
+<body>
+    <select id="wordList">
+        <option value="awake">Awake</option>
+        <option value="abundant">Abundant</option>
+        <option value="fast">Fast</option>
+        <option value="antonym">Antonym</option>
+        <option value="few">Few</option>
+        <option value="friend">Friend</option>
+        <option value="happy">Happy</option>
+        <option value="exciting">Exciting</option>
+        <option value="calm">Calm</option>
+        <option value="brave">Brave</option>
+        <option value="vivid">Vivid</option>
+        <option value="peaceful">Peaceful</option>
+    </select>
+    <button onclick="searchWord()">Search</button>
+    <a href="hp.html" class="button-link">Back to homepage</a>
+    
+    <div id="definition"></div>
+
+    <script src="homepage.js"></script>
+    
+
+</body>
+</html>
